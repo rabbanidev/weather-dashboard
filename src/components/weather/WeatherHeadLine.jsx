@@ -1,5 +1,5 @@
 import { assests } from "../../assets";
-import { useWeather } from "../../contexts/WeatherContext";
+import { useWeather } from "../../hooks";
 import { dateFormate } from "../../utils/date-util";
 
 const getWeatherIcon = (climate) => {

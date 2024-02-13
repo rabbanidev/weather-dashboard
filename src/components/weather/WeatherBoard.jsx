@@ -1,5 +1,5 @@
-import { useWeather } from "../../contexts/WeatherContext";
-import AddToFavourite from "./AddToFavourite";
+import { useWeather } from "../../hooks";
+import ToggleFavourite from "./ToogleFavourite";
 import WeatherCondition from "./WeatherCondition";
 import WeatherHeadLine from "./WeatherHeadLine";
 
@@ -19,7 +19,7 @@ const WeatherBoard = () => {
   } else {
     content = (
       <div className="grid md:grid-cols-2 gap-10 md:gap-6">
-        <AddToFavourite />
+        <ToggleFavourite />
         <WeatherHeadLine />
         <WeatherCondition />
       </div>

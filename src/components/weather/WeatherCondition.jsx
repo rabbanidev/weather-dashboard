@@ -1,5 +1,5 @@
 import { assests } from "../../assets";
-import { useWeather } from "../../contexts/WeatherContext";
+import { useWeather } from "../../hooks";
 
 const WeatherCondition = () => {
   const { weatherData } = useWeather();

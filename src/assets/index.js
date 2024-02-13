@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import search from "./search.svg";
 import heart from "./heart.svg";
+import heartRed from "./heart-red.svg";
 import cloud from "./cloud.svg";
 import haze from "./haze.svg";
 import pin from "./pin.svg";
@@ -20,6 +21,7 @@ export const assests = {
   logo,
   search,
   heart,
+  heartRed,
   cloud,
   pin,
 

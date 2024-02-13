@@ -1,10 +1,9 @@
-/* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/prop-types */
 
-import { createContext, useContext } from "react";
+import { createContext } from "react";
 import { useFetchingWeather } from "../hooks";
 
-const WeatherContext = createContext(null);
+export const WeatherContext = createContext(null);
 
 export default function WeatherProvider({ children }) {
   const weather = useFetchingWeather();
@@ -15,7 +14,3 @@ export default function WeatherProvider({ children }) {
     </WeatherContext.Provider>
   );
 }
-
-export const useWeather = () => {
-  return useContext(WeatherContext);
-};
